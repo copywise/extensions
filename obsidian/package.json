@@ -1,0 +1,33 @@
+{
+  "name": "obsidian",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sh ./scripts/build.sh"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "@copywise/api": "^0.0.4"
+  },
+  "dependencies": {
+    "@copywise/api": "^0.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "esbuild": "^0.24.2",
+    "typescript": "^4.9.5"
+  },
+  "commands": [
+    {
+      "name": "View",
+      "displayName": "查看",
+      "condition": "any"
+    },
+    {
+      "name": "Add",
+      "displayName": "添加到 Obsidian",
+      "condition": "any"
+    }
+  ],
+  "packageManager": "pnpm@8.15.1+sha1.8adba2d20330c02d3856e18c4eb3819d1d3ca6aa"
+}
