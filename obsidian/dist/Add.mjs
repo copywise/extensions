@@ -1,6 +1,6 @@
 // src/Add.ts
 import { openUrl } from "@copywise/api";
-var Add_default = (data) => {
+var Add_default = ({ data }) => {
   const fileName = (/* @__PURE__ */ new Date()).toISOString().split("T")[0];
   const quotedContent = data.split("\n").map((line) => `> ${line}`).join("\n");
   const timestamp = (/* @__PURE__ */ new Date()).toLocaleString();

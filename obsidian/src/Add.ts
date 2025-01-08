@@ -1,6 +1,6 @@
 import { openUrl, openApp } from '@copywise/api';
 
-export default (data: any) => {
+export default ({ data }) => {
   // 获取当前日期并格式化为 YYYY-MM-DD
   const fileName = new Date().toISOString().split('T')[0];
   
