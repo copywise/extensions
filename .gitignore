@@ -1,2 +1,5 @@
 .history
 .DS_Store
+dist
+node_modules
+*.zip
