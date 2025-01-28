@@ -1,0 +1,36 @@
+{
+  "name": "google",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "sh ./scripts/build.sh"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "@copywise/api": "^0.0.4"
+  },
+  "dependencies": {
+    "@copywise/api": "^0.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "esbuild": "^0.24.2",
+    "typescript": "^4.9.5"
+  },
+  "commands": [
+    {
+      "name": "Search",
+      "displayName": "在 Google 中搜索",
+      "condition": "text"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "region",
+      "placeholder": "Region",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "packageManager": "pnpm@8.15.1+sha1.8adba2d20330c02d3856e18c4eb3819d1d3ca6aa"
+}
