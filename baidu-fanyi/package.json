@@ -1,0 +1,53 @@
+{
+  "name": "baidu-fanyi",
+  "version": "0.0.1",
+  "title": "百度翻译",
+  "description": "使用百度翻译进行文本翻译",
+  "scripts": {
+    "build": "sh ./scripts/build.sh"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "@copywise/api": "^0.0.4"
+  },
+  "dependencies": {
+    "@copywise/api": "^0.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "esbuild": "^0.24.2",
+    "typescript": "^4.9.5"
+  },
+  "commands": [
+    {
+      "name": "Translate",
+      "title": "翻译",
+      "description": "使用百度翻译进行文本翻译",
+      "condition": "text",
+      "preferences": [
+        {
+          "name": "targetLanguage",
+          "description": "目标翻译语言",
+          "label": "配置参数",
+          "type": "select",
+          "options": [
+            {
+              "label": "中文（简体）",
+              "value": "zh"
+            },
+            {
+              "label": "英语",
+              "value": "en"
+            },
+            {
+              "label": "日语",
+              "value": "jp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "packageManager": "pnpm@8.15.1+sha1.8adba2d20330c02d3856e18c4eb3819d1d3ca6aa"
+}
