@@ -1,3 +1,5 @@
+import { openUrl } from '@copywise/api';
+
 export default async ({ data, preferences }) => {
   await fetch('https://api.kiipu.com/v1/bookmark', {
     method: 'POST',
@@ -9,4 +11,8 @@ export default async ({ data, preferences }) => {
       url: data
     })
   });
+
+  if (preferences.openAfterSave) {
+    openUrl(`https://beta.kiipu.com`);
+  }
 }

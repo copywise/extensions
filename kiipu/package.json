@@ -1,6 +1,8 @@
 {
   "name": "kiipu",
   "version": "0.0.1",
+  "title": "奇普书签",
+  "description": "保存URL到奇普书签",
   "scripts": {
     "build": "sh ./scripts/build.sh"
   },
@@ -20,13 +22,38 @@
   "commands": [
     {
       "name": "Save",
-      "displayName": "收藏到 Kiipu",
-      "condition": "link"
+      "title": "收藏到 Kiipu",
+      "description": "将URL保存到奇普书签",
+      "condition": "includeLink",
+      "preferences": [
+        {
+          "name": "openAfterSave",
+          "description": "设置保存后是否打开奇普",
+          "label": "保存后打开奇普书签",
+          "type": "checkbox",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "Test",
+      "title": "测试命令",
+      "description": "这是一个测试命令",
+      "condition": "link",
+      "preferences": [
+        {
+          "name": "params",
+          "description": "这是配置参数",
+          "label": "配置参数",
+          "type": "text"
+        }
+      ]
     }
   ],
   "preferences": [
     {
       "name": "token",
+      "description": "设置访问的 Access Token",
       "label": "Access Token",
       "type": "password",
       "required": true
