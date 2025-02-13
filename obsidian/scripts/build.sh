@@ -33,12 +33,14 @@ for file in dist/*.js; do
     mv "$file" "${file%.js}.mjs"
 done
 
-# 6. 复制 package.json 到 dist
-cp package.json dist
+# 6. 从 package.json 提取指定字段生成 manifest.json
+jq '{ name: .name, version: .version, title: .title, description: .description, icons: .icons, commands: .commands, preferences: .preferences }' package.json > dist/manifest.json
 
+# 7. 复制 assets 到 dist（排除隐藏文件）
+rsync -R $(find assets -type f ! -name '.*') dist/
 
-# 7. dist里面的文件打成一个zip包
+# 8. dist里面的文件打成一个zip包
 rm -rf 1d03e943-8f0f-41fc-996b-9722ab4b6101.zip
-zip -rj 1d03e943-8f0f-41fc-996b-9722ab4b6101.zip ./dist/*
+cd dist && zip -r ../1d03e943-8f0f-41fc-996b-9722ab4b6101.zip *
 
 echo "Build completed. Output files are in the dist directory."

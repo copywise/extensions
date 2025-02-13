@@ -19,10 +19,14 @@
     "esbuild": "^0.24.2",
     "typescript": "^4.9.5"
   },
+  "icons":{
+    "32":"assets/icon-32.png",
+    "128":"assets/icon-128.png"
+  },
   "commands": [
     {
       "name": "Translate",
-      "title": "翻译",
+      "title": "百度翻译",
       "description": "使用百度翻译进行文本翻译",
       "condition": "text",
       "preferences": [

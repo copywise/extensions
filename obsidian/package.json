@@ -1,6 +1,8 @@
 {
   "name": "obsidian",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "title": "Obsidian",
+  "description": "Obsidian 扩展",
   "scripts": {
     "build": "sh ./scripts/build.sh"
   },
@@ -17,15 +19,19 @@
     "esbuild": "^0.24.2",
     "typescript": "^4.9.5"
   },
+  "icons":{
+    "32":"assets/icon-32.png",
+    "128":"assets/icon-128.png"
+  },
   "commands": [
     {
       "name": "View",
-      "displayName": "查看",
+      "title": "查看",
       "condition": "any"
     },
     {
       "name": "Add",
-      "displayName": "添加到 Obsidian",
+      "title": "添加到 Obsidian",
       "condition": "any"
     }
   ],

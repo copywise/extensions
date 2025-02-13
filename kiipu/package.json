@@ -19,6 +19,10 @@
     "esbuild": "^0.24.2",
     "typescript": "^4.9.5"
   },
+  "icons":{
+    "32":"assets/icon-32.png",
+    "128":"assets/icon-128.png"
+  },
   "commands": [
     {
       "name": "Save",

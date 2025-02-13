@@ -1,6 +1,8 @@
 {
   "name": "google",
   "version": "0.0.1",
+  "title": "Google",
+  "description": "使用 Google 搜索",
   "scripts": {
     "build": "sh ./scripts/build.sh"
   },
@@ -17,10 +19,14 @@
     "esbuild": "^0.24.2",
     "typescript": "^4.9.5"
   },
+  "icons":{
+    "32":"assets/icon-32.png",
+    "128":"assets/icon-128.png"
+  },
   "commands": [
     {
       "name": "Search",
-      "displayName": "在 Google 中搜索",
+      "title": "在 Google 中搜索",
       "condition": "text"
     }
   ],
