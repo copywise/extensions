@@ -1,0 +1,43 @@
+{
+  "name": "readwise",
+  "version": "0.0.1",
+  "title": "Readwise",
+  "description": "Readwise 扩展",
+  "scripts": {
+    "build": "sh ./scripts/build.sh"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "@copywise/api": "^0.0.4"
+  },
+  "dependencies": {
+    "@copywise/api": "^0.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "esbuild": "^0.24.2",
+    "typescript": "^4.9.5"
+  },
+  "icons":{
+    "32":"assets/icon-32.png",
+    "128":"assets/icon-128.png"
+  },
+  "commands": [
+    {
+      "name": "Save",
+      "title": "保存到 Readwise",
+      "condition": "text"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "token",
+      "description": "设置访问的 Access Token",
+      "label": "Access Token",
+      "type": "password",
+      "required": true
+    }
+  ],
+  "packageManager": "pnpm@8.15.1+sha1.8adba2d20330c02d3856e18c4eb3819d1d3ca6aa"
+}
