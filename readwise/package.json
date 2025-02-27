@@ -1,6 +1,6 @@
 {
   "name": "readwise",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Readwise",
   "description": "Readwise 扩展",
   "scripts": {
@@ -11,7 +11,7 @@
     "@copywise/api": "^0.0.4"
   },
   "dependencies": {
-    "@copywise/api": "^0.0.3"
+    "@copywise/api": "^0.0.6"
   },
   "devDependencies": {
     "@types/react": "^19.0.2",

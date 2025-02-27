@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@copywise/api':
-    specifier: ^0.0.3
-    version: 0.0.3
+    specifier: ^0.0.6
+    version: 0.0.6
   react:
     specifier: ^19.0.0
     version: 19.0.0
@@ -28,8 +28,8 @@ devDependencies:
 
 packages:
 
-  /@copywise/api@0.0.3:
-    resolution: {integrity: sha512-3d+sACCie4ApFGfzI/AJqYybCAYlOBTtbJbdzyBLuu4OmcS4DWyavo13mSuOF5pQG/lzMtcSKI/Rv5fDWmbwhw==}
+  /@copywise/api@0.0.6:
+    resolution: {integrity: sha512-nVjAWNlF04aOV0s6Vqrkqr6C1imgpaFtIL3H/st9gNq9UCGh4w2FjFGqf+bs8Fjnfpg3MFttsoWRdQl5P91NuQ==}
     dependencies:
       react: 19.0.0
     dev: false
