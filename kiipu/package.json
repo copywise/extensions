@@ -1,19 +1,17 @@
 {
   "name": "kiipu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "奇普书签",
   "description": "保存URL到奇普书签",
   "scripts": {
-    "build": "sh ./scripts/build.sh"
+    "build": "copywise build --zip 8fe46f63-100c-4aef-ba38-1418c32132be.zip"
   },
   "peerDependencies": {
-    "@copywise/api": "^0.0.4",
+    "@copywise/api": "0.0.7-alpha.5",
     "react": "^19.0.0"
   },
-  "dependencies": {
-    "@copywise/api": "0.0.7-alpha.1"
-  },
   "devDependencies": {
+    "@copywise/cli": "^0.0.1",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "esbuild": "^0.24.2",

@@ -1,19 +1,17 @@
 {
   "name": "readwise",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "Readwise",
   "description": "Readwise 扩展",
   "scripts": {
-    "build": "sh ./scripts/build.sh"
+    "build": "copywise build --zip 038c1f92-1843-403c-aac1-e267d669c695.zip"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "@copywise/api": "^0.0.4"
-  },
-  "dependencies": {
-    "@copywise/api": "^0.0.6"
+    "@copywise/api": "0.0.7-alpha.5",
+    "react": "^19.0.0"
   },
   "devDependencies": {
+    "@copywise/cli": "^0.0.1",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "esbuild": "^0.24.2",

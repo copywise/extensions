@@ -1,16 +1,17 @@
 {
   "name": "obsidian",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Obsidian",
   "description": "Obsidian 扩展",
   "scripts": {
-    "build": "sh ./scripts/build.sh"
+    "build": "copywise build --zip 1d03e943-8f0f-41fc-996b-9722ab4b6101.zip"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "@copywise/api": "0.0.7-alpha.5"
+    "@copywise/api": "0.0.7-alpha.5",
+    "react": "^19.0.0"
   },
   "devDependencies": {
+    "@copywise/cli": "^0.0.1",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "esbuild": "^0.24.2",

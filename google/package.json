@@ -1,19 +1,17 @@
 {
   "name": "google",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Google",
   "description": "使用 Google 搜索",
   "scripts": {
-    "build": "sh ./scripts/build.sh"
+    "build": "copywise build --zip f29569ad-91c0-4cf0-82ef-68c5d827902b.zip"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "@copywise/api": "^0.0.4"
-  },
-  "dependencies": {
-    "@copywise/api": "^0.0.3"
+    "@copywise/api": "0.0.7-alpha.5",
+    "react": "^19.0.0"
   },
   "devDependencies": {
+    "@copywise/cli": "^0.0.1",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "esbuild": "^0.24.2",

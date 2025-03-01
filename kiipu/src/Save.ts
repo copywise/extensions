@@ -4,7 +4,7 @@ export default async ({ data, preferences }) => {
   showToast({
     title: 'Saving...',
     message: data,
-    status: 'error'
+    status: 'loading'
   });
 
   const response = await fetch('https://api.kiipu.com/v1/bookmark', {

@@ -1,19 +1,17 @@
 {
   "name": "github",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Github",
   "description": "",
   "scripts": {
-    "build": "sh ./scripts/build.sh"
+    "build": "copywise build --zip 2fbcd157-705c-4622-95af-3df68285e93d.zip"
   },
   "peerDependencies": {
-    "@copywise/api": "^0.0.4",
+    "@copywise/api": "0.0.7-alpha.5",
     "react": "^19.0.0"
   },
-  "dependencies": {
-    "@copywise/api": "0.0.7-alpha.2"
-  },
   "devDependencies": {
+    "@copywise/cli": "^0.0.1",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "esbuild": "^0.24.2",
