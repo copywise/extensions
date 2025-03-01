@@ -8,10 +8,7 @@
   },
   "peerDependencies": {
     "react": "^19.0.0",
-    "@copywise/api": "^0.0.4"
-  },
-  "dependencies": {
-    "@copywise/api": "^0.0.3"
+    "@copywise/api": "0.0.7-alpha.5"
   },
   "devDependencies": {
     "@types/react": "^19.0.2",

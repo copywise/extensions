@@ -94,7 +94,7 @@ jq '{ name: .name, version: .version, title: .title, description: .description, 
 rsync -R $(find assets -type f ! -name '.*') dist/
 
 # 8. dist里面的文件打成一个zip包
-rm -rf 1d03e943-8f0f-41fc-996b-9722ab4b6101.zip
-cd dist && zip -r ../1d03e943-8f0f-41fc-996b-9722ab4b6101.zip *
+rm -rf c1818798-4fc2-4c62-919c-7ecc2c881d75.zip
+cd dist && zip -r ../c1818798-4fc2-4c62-919c-7ecc2c881d75.zip *
 
 echo "Build completed. Output files are in the dist directory."

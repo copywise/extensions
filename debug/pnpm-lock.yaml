@@ -6,11 +6,14 @@ settings:
 
 dependencies:
   '@copywise/api':
-    specifier: 0.0.7-alpha.5
-    version: 0.0.7-alpha.5
+    specifier: 0.0.7-alpha.3
+    version: 0.0.7-alpha.3
   react:
     specifier: ^19.0.0
     version: 19.0.0
+  react-dom:
+    specifier: ^19.0.0
+    version: 19.0.0(react@19.0.0)
 
 devDependencies:
   '@types/react':
@@ -28,8 +31,8 @@ devDependencies:
 
 packages:
 
-  /@copywise/api@0.0.7-alpha.5:
-    resolution: {integrity: sha512-LQSbGo5zbfL9OvwF5Gx2wSO+ViY3YICnrBGmA6OKsmVBD6aDdCjVkJDErtxv1smV5cz1Hu5Wl66m0HNjherrSw==}
+  /@copywise/api@0.0.7-alpha.3:
+    resolution: {integrity: sha512-+K+glw+LcKZudwS9LzO5peOeCnlUbFewR+zqUFYQBm4CIK+KOmqGjE+U7o+8did7eVNfpy1cosJHTNHjzt1XZQ==}
     dependencies:
       react: 19.0.0
     dev: false
@@ -310,9 +313,22 @@ packages:
       '@esbuild/win32-x64': 0.24.2
     dev: true
 
+  /react-dom@19.0.0(react@19.0.0):
+    resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
+    peerDependencies:
+      react: ^19.0.0
+    dependencies:
+      react: 19.0.0
+      scheduler: 0.25.0
+    dev: false
+
   /react@19.0.0:
     resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /scheduler@0.25.0:
+    resolution: {integrity: sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==}
     dev: false
 
   /typescript@4.9.5:
