@@ -1,6 +1,6 @@
 {
   "name": "debug",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Debug",
   "description": "",
   "scripts": {
@@ -31,6 +31,20 @@
       "name": "View",
       "title": "查看",
       "condition": "any"
+    },
+    {
+      "name": "Test",
+      "title": "测试命令",
+      "description": "这是一个测试命令",
+      "condition": "link",
+      "preferences": [
+        {
+          "name": "params",
+          "description": "这是配置参数",
+          "label": "配置参数",
+          "type": "text"
+        }
+      ]
     }
   ],
   "packageManager": "pnpm@8.15.1+sha1.8adba2d20330c02d3856e18c4eb3819d1d3ca6aa"

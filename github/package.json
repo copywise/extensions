@@ -1,8 +1,8 @@
 {
   "name": "github",
-  "version": "0.0.2",
-  "title": "Github",
-  "description": "",
+  "version": "0.0.3",
+  "title": "GitHub",
+  "description": "GitHub Extension: Search and Clone GitHub Repositories",
   "scripts": {
     "build": "copywise build --zip 2fbcd157-705c-4622-95af-3df68285e93d.zip"
   },
@@ -24,13 +24,13 @@
   "commands": [
     {
       "name": "Search",
-      "title": "在 Github 中搜索",
+      "title": "Search on GitHub",
       "description": "",
       "condition": "text"
     },
     {
       "name": "Clone",
-      "title": "Clone 代码到本地",
+      "title": "Clone Repository",
       "description": "",
       "condition": "text",
       "conditionRule": "(https://github.com/|git@[\\w.-]+(?:\\.[\\w.-]+)+:)([\\w-]+)(?:/[\\w-]+)*/([\\.\\w-]+)(?:\\.git)?",
@@ -38,13 +38,13 @@
         {
           "name": "executableURL",
           "description": "",
-          "label": "Git命令地址",
+          "label": "Git command URL",
           "type": "text"
         },
         {
           "name": "currentDirectoryURL",
           "description": "",
-          "label": "本地路径",
+          "label": "Local path",
           "type": "text"
         }
       ]

@@ -1,8 +1,8 @@
 {
   "name": "baidu-fanyi",
-  "version": "0.0.2",
-  "title": "百度翻译",
-  "description": "使用百度翻译进行文本翻译",
+  "version": "0.0.3",
+  "title": "Baidu Translate",
+  "description": "Baidu Translate Extension: Translate Clipboard Content via Baidu Translate",
   "scripts": {
     "build": "copywise build --zip 69cebdda-0165-424a-bb04-0c1990645e71.zip"
   },
@@ -24,26 +24,25 @@
   "commands": [
     {
       "name": "Translate",
-      "title": "百度翻译",
-      "description": "使用百度翻译进行文本翻译",
+      "title": "Baidu Translate",
+      "description": "Translate clipboard content using Baidu Translate",
       "condition": "text",
       "preferences": [
         {
           "name": "targetLanguage",
-          "description": "目标翻译语言",
-          "label": "配置参数",
+          "label": "Target language",
           "type": "select",
           "options": [
             {
-              "label": "中文（简体）",
+              "label": "Chinese(Simplified)",
               "value": "zh"
             },
             {
-              "label": "英语",
+              "label": "English",
               "value": "en"
             },
             {
-              "label": "日语",
+              "label": "Japanese",
               "value": "jp"
             }
           ]

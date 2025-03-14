@@ -1,8 +1,8 @@
 {
   "name": "obsidian",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "Obsidian",
-  "description": "Obsidian 扩展",
+  "description": "Obsidian Extension: Save Clipboard Content to Obsidian",
   "scripts": {
     "build": "copywise build --zip 1d03e943-8f0f-41fc-996b-9722ab4b6101.zip"
   },
@@ -23,13 +23,8 @@
   },
   "commands": [
     {
-      "name": "View",
-      "title": "查看",
-      "condition": "any"
-    },
-    {
-      "name": "Add",
-      "title": "添加到 Obsidian",
+      "name": "Save",
+      "title": "Save to Obsidian",
       "condition": "any"
     }
   ],

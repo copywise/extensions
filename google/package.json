@@ -1,8 +1,8 @@
 {
   "name": "google",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "Google",
-  "description": "使用 Google 搜索",
+  "description": "Google Extension: Search on Google",
   "scripts": {
     "build": "copywise build --zip f29569ad-91c0-4cf0-82ef-68c5d827902b.zip"
   },
@@ -24,7 +24,7 @@
   "commands": [
     {
       "name": "Search",
-      "title": "在 Google 中搜索",
+      "title": "Search on Google",
       "condition": "text"
     }
   ],

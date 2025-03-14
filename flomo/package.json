@@ -1,8 +1,8 @@
 {
   "name": "flomo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "Flomo",
-  "description": "Flomo 扩展",
+  "description": "Flomo Extension: Save Clipboard Content to Flomo",
   "scripts": {
     "build": "copywise build --zip 6ea6e2a6-77a7-47d6-b806-09d1f721c649.zip"
   },
@@ -24,15 +24,14 @@
   "commands": [
     {
       "name": "Save",
-      "title": "保存到 Flomo",
+      "title": "Save to Flomo",
       "condition": "text"
     }
   ],
   "preferences": [
     {
       "name": "api",
-      "description": "设置记录API",
-      "label": "API URL",
+      "label": "Memo API",
       "type": "text",
       "required": true
     }
