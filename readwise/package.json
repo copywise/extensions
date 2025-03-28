@@ -1,6 +1,6 @@
 {
   "name": "readwise",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "title": "Readwise",
   "description": "Readwise Extension: Save Clipboard Content to Readwise Instantly",
   "scripts": {

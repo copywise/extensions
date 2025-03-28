@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { openUrl, showToast } from '@copywise/api';
 
 export default ({ data }) => {
-  const [value, setValue] = useState(data);
+  const text = data?.text || '';
+  const [value, setValue] = useState(text);
   const handleGoogle = () => {
-    openUrl(`https://www.google.com/search?q=${data}`);
+    openUrl(`https://www.google.com/search?q=${text}`);
   }
 
   const handleKiipu = () => {
-    openUrl(`https://kiipu.com/inbox/q/${data}`);
+    openUrl(`https://kiipu.com/inbox/q/${text}`);
   }
 
   const handleShowToast = () => {

@@ -1,11 +1,13 @@
 import { openUrl, openApp } from '@copywise/api';
 
 export default ({ data }) => {
+  const text = data?.text || '';
+
   // 获取当前日期并格式化为 YYYY-MM-DD
   const fileName = new Date().toISOString().split('T')[0];
   
   // 为每一行添加引用前缀
-  const quotedContent = data
+  const quotedContent = text
       .split('\n')
       .map((line: string) => `> ${line}`)
       .join('\n');

@@ -1,6 +1,6 @@
 {
   "name": "google",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "Google",
   "description": "Google Extension: Search on Google",
   "scripts": {

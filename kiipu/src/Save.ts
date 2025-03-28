@@ -1,9 +1,11 @@
 import { openUrl, showToast } from '@copywise/api';
 
 export default async ({ data, preferences }) => {
+  const text = data?.text || '';
+
   showToast({
     title: 'Saving...',
-    message: data,
+    message: text,
     status: 'loading'
   });
 
@@ -14,7 +16,7 @@ export default async ({ data, preferences }) => {
       Authorization: `bearer ${preferences.token}`
     },
     body: JSON.stringify({
-      url: data
+      url: text
     })
   });
 

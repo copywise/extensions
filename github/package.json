@@ -1,6 +1,6 @@
 {
   "name": "github",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "GitHub",
   "description": "GitHub Extension: Search and Clone GitHub Repositories",
   "scripts": {

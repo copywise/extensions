@@ -1,7 +1,7 @@
 import { showToast } from '@copywise/api';
 
 export default async ({ data }) => {
-  const text = data || '';
+  const text = data?.text || '';
   
   // Count characters (including spaces)
   const charCount = text.length;

@@ -1,9 +1,11 @@
 import { showToast } from '@copywise/api';
 
 export default async ({ data, preferences }) => {
+  const text = data?.text || '';
+
   showToast({
     title: 'Saving...',
-    message: data,
+    message: text,
     status: 'loading'
   });
   
@@ -13,7 +15,7 @@ export default async ({ data, preferences }) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      content: data
+      content: text
     })
   });
 }

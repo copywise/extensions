@@ -1,6 +1,6 @@
 {
   "name": "flomo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "Flomo",
   "description": "Flomo Extension: Save Clipboard Content to Flomo",
   "scripts": {

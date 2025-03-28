@@ -1,9 +1,11 @@
 import { showToast, executeShell } from '@copywise/api';
 
 export default async ({ data, preferences }) => {
+    const text = data?.text || '';
+    
     showToast({
         title: 'git clone',
-        message: data,
+        message: text,
         status: 'success'
     });
 
@@ -12,7 +14,7 @@ export default async ({ data, preferences }) => {
             executableURL: preferences.executableURL,
             arguments: [
                 'clone',
-                data
+                text
             ],
             currentDirectoryURL: preferences.currentDirectoryURL
         });

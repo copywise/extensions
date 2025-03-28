@@ -1,6 +1,6 @@
 {
   "name": "baidu-fanyi",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "Baidu Translate",
   "description": "Baidu Translate Extension: Translate Clipboard Content via Baidu Translate",
   "scripts": {
