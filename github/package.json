@@ -39,13 +39,15 @@
           "name": "executableURL",
           "description": "",
           "label": "Git command URL",
-          "type": "text"
+          "type": "text",
+          "default": "/usr/bin/git"
         },
         {
           "name": "currentDirectoryURL",
           "description": "",
           "label": "Local path",
-          "type": "text"
+          "type": "text",
+          "default": "~/Desktop"
         }
       ]
     }
