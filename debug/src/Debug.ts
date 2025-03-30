@@ -1,10 +1,19 @@
-import { showToast } from '@copywise/api';
+import { showToast, executeShell, log } from '@copywise/api';
 
-export default async ({ data }) => {
+export default async ({ data, preferences }) => {
   const text = data?.text || '';
-  showToast({
-    title: 'Debug',
-    message: text,
-    status: 'success'
-  });
+  try {
+    const ret = await executeShell({
+      executableURL: "/bin/bash",
+      arguments: [
+          '-c',
+          'open .'
+      ],
+      currentDirectoryURL: '~/Desktop'
+    });
+
+    log.debug("[debug] from ext: " + JSON.stringify(ret));
+  } catch(ex) {
+    log.error("[debug] from ext: " + JSON.stringify(ex));
+  }
 }
