@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { openUrl, showToast } from '@copywise/api';
+import { openUrl, showToast, log } from '@copywise/api';
 
 export default ({ data }) => {
+  log.debug(data);
   const text = data?.text || '';
-  const [value, setValue] = useState(text);
+  const [value] = useState(text);
   const handleGoogle = () => {
     openUrl(`https://www.google.com/search?q=${text}`);
   }
@@ -15,7 +16,7 @@ export default ({ data }) => {
   const handleShowToast = () => {
     showToast({
       title: 'Toast',
-      message: 'Hello, world!',
+      message: text,
       status: 'success'
     });
   }

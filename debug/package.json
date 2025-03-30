@@ -1,17 +1,17 @@
 {
   "name": "debug",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "Debug",
   "description": "",
   "scripts": {
     "build": "copywise build --zip c1818798-4fc2-4c62-919c-7ecc2c881d75.zip"
   },
   "peerDependencies": {
-    "@copywise/api": "0.0.7-alpha.6",
+    "@copywise/api": "0.0.8-alpha.1",
     "react": "^19.0.0"
   },
   "devDependencies": {
-    "@copywise/cli": "^0.0.1",
+    "@copywise/cli": "^0.0.2-alpha.1",
     "@types/react": "^19.0.3",
     "@types/react-dom": "^19.0.2",
     "esbuild": "^0.24.2",

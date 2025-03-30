@@ -6,16 +6,16 @@ settings:
 
 dependencies:
   '@copywise/api':
-    specifier: 0.0.7-alpha.5
-    version: 0.0.7-alpha.5
+    specifier: 0.0.8-alpha.1
+    version: 0.0.8-alpha.1
   react:
     specifier: ^19.0.0
     version: 19.0.0
 
 devDependencies:
   '@copywise/cli':
-    specifier: ^0.0.1
-    version: 0.0.1
+    specifier: ^0.0.2-alpha.1
+    version: 0.0.2-alpha.1
   '@types/react':
     specifier: ^19.0.2
     version: 19.0.3
@@ -31,14 +31,14 @@ devDependencies:
 
 packages:
 
-  /@copywise/api@0.0.7-alpha.5:
-    resolution: {integrity: sha512-LQSbGo5zbfL9OvwF5Gx2wSO+ViY3YICnrBGmA6OKsmVBD6aDdCjVkJDErtxv1smV5cz1Hu5Wl66m0HNjherrSw==}
+  /@copywise/api@0.0.8-alpha.1:
+    resolution: {integrity: sha512-D7g2oEGUhgfefS1KXPLFvc1hmb37PpfCCEgparsNebeICtbDIVE8bZbIAVN+txGQalrIqZfo1R1zrIc7NkFgOw==}
     dependencies:
       react: 19.0.0
     dev: false
 
-  /@copywise/cli@0.0.1:
-    resolution: {integrity: sha512-4cHHT0cPC2IactvwrflC9JWgHLqZMb21hCd6xXIGuYnDKOO/4FCifBTtF42lp9XJTO2m3u20nU8ZhPhQQCP0tA==}
+  /@copywise/cli@0.0.2-alpha.1:
+    resolution: {integrity: sha512-7B1KDIAGO8zyzAlCoHq8cuUmS3H0s8N3G49OuGOzN1YkO611a07Vfi5vzmQfc/BWJsmXpmN4aNJe8ACyZmAm7A==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:

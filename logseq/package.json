@@ -1,17 +1,17 @@
 {
   "name": "logseq",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "Logseq",
   "description": "Logseq Extension: Save Clipboard Content to Logseq",
   "scripts": {
     "build": "copywise build --zip 6f2a7b9f-60f7-4f34-bf86-cee3bfb43c97.zip"
   },
   "peerDependencies": {
-    "@copywise/api": "0.0.7-alpha.5",
+    "@copywise/api": "0.0.8-alpha.1",
     "react": "^19.0.0"
   },
   "devDependencies": {
-    "@copywise/cli": "^0.0.1",
+    "@copywise/cli": "^0.0.2-alpha.1",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "esbuild": "^0.24.2",

@@ -1,17 +1,17 @@
 {
   "name": "kiipu",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "title": "Kiipu",
   "description": "Kiipu Extension: Save URLs to Kiipu Instantly",
   "scripts": {
     "build": "copywise build --zip 8fe46f63-100c-4aef-ba38-1418c32132be.zip"
   },
   "peerDependencies": {
-    "@copywise/api": "0.0.7-alpha.5",
+    "@copywise/api": "0.0.8-alpha.1",
     "react": "^19.0.0"
   },
   "devDependencies": {
-    "@copywise/cli": "^0.0.1",
+    "@copywise/cli": "^0.0.2-alpha.1",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "esbuild": "^0.24.2",
