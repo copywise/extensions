@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.787.0
     version: 3.787.0
   '@copywise/api':
-    specifier: 0.0.8-alpha.5
-    version: 0.0.8-alpha.5
+    specifier: 0.0.8-alpha.7
+    version: 0.0.8-alpha.7
   '@types/node':
     specifier: ^22.14.1
     version: 22.14.1
@@ -611,8 +611,8 @@ packages:
       tslib: 2.8.1
     dev: false
 
-  /@copywise/api@0.0.8-alpha.5:
-    resolution: {integrity: sha512-3+8d7ImvhSgBzyfvYl2jR8n2z95VvMyEtbJlBPvRhEPlDWlUNHTQoBi3YaXekwhB05hUBXP+XZ6yOsbfqME7Ew==}
+  /@copywise/api@0.0.8-alpha.7:
+    resolution: {integrity: sha512-cooe7v7+aPF20MNzuRCE/+oyCIvo3+draiuqdoDc+NDVrbkXzeDflzoIs8gk0umPpcKrkWf3xoE+r6oCQrQcwg==}
     dependencies:
       react: 19.0.0
     dev: false
