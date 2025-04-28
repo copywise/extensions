@@ -1,8 +1,8 @@
 {
   "name": "cloudflare-r2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Cloudflare R2",
-  "description": "Cloudflare R2 Extension: Upload to Cloudflare R2",
+  "description": "Upload files to Cloudflare R2",
   "scripts": {
     "build": "copywise build --zip f1284293-89b2-48d5-9c88-0109a44105ec.zip"
   },
@@ -25,47 +25,41 @@
   "commands": [
     {
       "name": "Upload",
-      "title": "Upload to Cloudflare R2",
-      "condition": "file",
+      "title": "Upload files to Cloudflare R2",
+      "condition": "file image",
       "preferences": [
         {
           "name": "accessKey",
-          "description": "Access Key ID",
           "label": "Access Key ID",
           "type": "password",
           "required": true
         },
         {
           "name": "secretKey",
-          "description": "Secret Access Key",
           "label": "Secret Access Key",
           "type": "password",
           "required": true
         },
         {
           "name": "bucketName",
-          "description": "Bucket name",
           "label": "Bucket name",
           "type": "text",
           "required": true
         },
         {
           "name": "endpoint",
-          "description": "Endpoint",
           "label": "Endpoint",
           "type": "text",
           "required": true
         },
         {
           "name": "domain",
-          "description": "Domain",
           "label": "Domain",
           "type": "text",
           "required": true
         },
         {
           "name": "folderPath",
-          "description": "Folder path",
           "label": "Folder path",
           "type": "text"
         }
